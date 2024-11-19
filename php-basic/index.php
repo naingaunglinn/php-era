@@ -1,6 +1,6 @@
 <?php
 
 $name = "naingaunglinn";
-echo $name;
+echo "Hello $name";
 
 ?>
