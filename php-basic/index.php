@@ -1,6 +1,7 @@
 <?php
 
-define('STATUS_PAID', 'paid');
-echo defined('STATUS_PAID');
+const STATUS_PAID = 'paid';
+
 echo STATUS_PAID;
+
 ?>
