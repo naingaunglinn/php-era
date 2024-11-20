@@ -1,22 +1,9 @@
 <?php
 
-/* BOOLEANS */
+/* Integers */
 
-$isComplete = true;
+$x = (int)200_200_200;
 
-// intergers 0, -0 = false;
-// floats 0.0 -0.0 = false;
-// '' = false;
-// '0' = false;
-// [] = false;
-// null = false;
-
-if($isComplete){
-    // do something;
-    echo 'success';
-} else {
-    // do somethig else
-    echo 'fail';
-}
+echo $x;
 
 ?>
