@@ -1,7 +1,10 @@
 <?php
 
-const STATUS_PAID = 'paid';
+// Variable Variables
 
-echo STATUS_PAID;
+$foo = 'blue';
+$$foo = 'baz';
+
+echo $foo, $blue;
 
 ?>
