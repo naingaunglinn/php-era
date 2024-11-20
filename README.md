@@ -28,4 +28,6 @@ New destination for the PHP knowledge
 # 2 Special Types
     # resource
     # null
+
+# declare(strict_types = 1) // strict mode on    
 ```
