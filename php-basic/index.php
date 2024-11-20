@@ -2,8 +2,25 @@
 
 /* Strings */
 
-$firstName = 'Gray'; // Can't use variable.
-$lastName = 'Wish'; // Can use variable.
+$x = 1;
+$y = 2;
 
-$name = $firstName . ' ' . $lastName;
-echo $name . '<br/>';
+// Heredoc
+$text = <<<TEXT
+Line1 $x
+Line2 $y
+Line3
+TEXT;
+
+echo nl2br($text);
+
+
+// Nowdoc
+$text = <<<'TEXT'
+Line1 $x
+Line2 $y
+Line3
+TEXT;
+
+echo "<br/>";
+echo nl2br($text);
