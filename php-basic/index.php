@@ -1,22 +1,9 @@
 <?php
 
-/* Floats */
+/* Strings */
 
-$x = 9;
+$firstName = 'Gray'; // Can't use variable.
+$lastName = 'Wish'; // Can use variable.
 
-var_dump(floatval($x));
-
-$a = 0.23;
-$b = 1 - 0.77;
-
-var_dump($a, $b);
-
-if($a == $b) {
-    echo "Yes";
-} else {
-    echo "No";
-}
-echo $y;
-echo PHP_FLOAT_MAX * 2
-
-?>
+$name = $firstName . ' ' . $lastName;
+echo $name . '<br/>';

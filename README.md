@@ -28,4 +28,8 @@ New destination for the PHP knowledge
 # 2 Special Types
     # resource
     # null
+
+/* PHP String */
+- '${} string interpolation' is deprecated since PHP 8.2.
+
 ```
