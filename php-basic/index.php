@@ -1,10 +1,22 @@
 <?php
 
-// Variable Variables
+/* BOOLEANS */
 
-$foo = 'blue';
-$$foo = 'baz';
+$isComplete = true;
 
-echo $foo, $blue;
+// intergers 0, -0 = false;
+// floats 0.0 -0.0 = false;
+// '' = false;
+// '0' = false;
+// [] = false;
+// null = false;
+
+if($isComplete){
+    // do something;
+    echo 'success';
+} else {
+    // do somethig else
+    echo 'fail';
+}
 
 ?>
