@@ -1,5 +1,6 @@
 <?php
 
+
 /* Strings */
 
 $x = 1;
