@@ -1,27 +1,43 @@
 <?php
 
+/* Arrays */
+$programmingLanguages = ['PHP', 'JAVA', 'JAVASCRIPT'];
 
-/* Strings */
+echo "<pre>";
+print_r($programmingLanguages);
+echo "</pre>";
+echo count($programmingLanguages);
 
-$x = 1;
-$y = 2;
+array_push($programmingLanguages, 'C++', 'C', 'PYTHON');
+echo "<pre>";
+print_r($programmingLanguages);
+echo "</pre>";
+echo count($programmingLanguages);
 
-// Heredoc
-$text = <<<TEXT
-Line1 $x
-Line2 $y
-Line3
-TEXT;
+$programmingLanguages = [
+    'php' => [
+        'creator' => '',
+        'website' => 'www.php.net',
+        'extension' => '.php',
+        'isOpenSource' => true,
+        'versions' => [
+            ['version' => 8, 'releaseDate' => 'Nov 26, 2020'],
+            ['version' => 7.4, 'releaseDate' => 'Nov 28, 2019']
+        ]
+    ],
+    'python' => [
+        'creator' => '',
+        'website' => 'www.python.org',
+        'extension' => '.py',
+        'isOpenSource' => true,
+        'versions' => [
+            ['version' => 3.9, 'releaseDate' => 'Oct 5, 2020'],
+            ['version' => 7.4, 'releaseDate' => 'Oct 14, 2019']
+        ]
+    ]
+];
 
-echo nl2br($text);
-
-
-// Nowdoc
-$text = <<<'TEXT'
-Line1 $x
-Line2 $y
-Line3
-TEXT;
-
-echo "<br/>";
-echo nl2br($text);
+echo "<pre>";
+print_r($programmingLanguages);
+echo "</pre>";
+echo count($programmingLanguages);
