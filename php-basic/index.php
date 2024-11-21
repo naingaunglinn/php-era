@@ -1,27 +1,8 @@
 <?php
 
+/* NULL */
 
-/* Strings */
+$x = null;
 
-$x = 1;
-$y = 2;
-
-// Heredoc
-$text = <<<TEXT
-Line1 $x
-Line2 $y
-Line3
-TEXT;
-
-echo nl2br($text);
-
-
-// Nowdoc
-$text = <<<'TEXT'
-Line1 $x
-Line2 $y
-Line3
-TEXT;
-
-echo "<br/>";
-echo nl2br($text);
+var_dump(is_null($x));
+echo $x;
