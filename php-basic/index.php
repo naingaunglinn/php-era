@@ -1,12 +1,11 @@
 <?php
 
-/* Array */
+/* Expressions */
 
 $x = 5;
+$y = $x;
+$z = $x + $y;
 
-var_dump((array) $x);
-
-$array = ['a' => 5, 'b' => null];
-
-var_dump(array_key_exists('a', $array));
-var_dump(isset($array['a']));
+if ($x < 0) {
+    echo 'hello';
+}
