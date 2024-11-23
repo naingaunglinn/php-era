@@ -50,3 +50,28 @@ var_dump($x);
 var_dump($x);
 
 // Logical Operators (&& || ! and or xor)
+$x = true;
+$y = false;
+
+
+function hello(){
+    echo "hello world";
+
+    return false;
+}
+var_dump($x && hello() || $y);
+
+// Bitwise Operators (& | ^ ~ << >>)
+$x = 6; // 110
+$y = 3; // 011
+
+echo "<br/>"; 
+var_dump($x & $y); // & operator concat array result is  2 = 010;
+
+// Array Operators (+ == === != <> !==)
+$x = ['a', 'b', 'c'];
+$y = ['d', 'e', 'f', 'g', 'h', 'i'];
+
+$z = $x + $y;
+
+print_r($z);
