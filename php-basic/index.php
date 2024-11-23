@@ -49,3 +49,18 @@ function hello(){
     return false;
 }
 var_dump($x && hello() || $y);
+
+// Bitwise Operators (& | ^ ~ << >>)
+$x = 6; // 110
+$y = 3; // 011
+
+echo "<br/>"; 
+var_dump($x & $y); // & operator concat array result is  2 = 010;
+
+// Array Operators (+ == === != <> !==)
+$x = ['a', 'b', 'c'];
+$y = ['d', 'e', 'f', 'g', 'h', 'i'];
+
+$z = $x + $y;
+
+print_r($z);
