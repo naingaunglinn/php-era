@@ -32,3 +32,7 @@ New destination for the PHP knowledge
 
 /* PHP String */
 - '${} string interpolation' is deprecated since PHP 8.2.
+
+/* Operator Precedence & Associativity */
+// follow this link 
+https://www.php.net/manual/en/language.operators.precedence.php
