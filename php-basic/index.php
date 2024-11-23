@@ -34,3 +34,18 @@ var_dump($x <=> $y);
 var_dump(0 == 'hello'); // 0 will convert into string
 var_dump(0 == '0'); // will return true;
 
+// Error Control Operator (@)
+
+// Increment / Decrement Operators (++, --)
+
+// Logical Operators (&& || ! and or xor)
+$x = true;
+$y = false;
+
+
+function hello(){
+    echo "hello world";
+
+    return false;
+}
+var_dump($x && hello() || $y);
