@@ -1,34 +1,23 @@
 <?php
 
-/* Loops */
+/* Switch */
 
-// while => working through if condition is true
-$i = 0;
-while ($i <= 15) {
-    if($i % 2 == 0){
-        $i++;
-        continue;
-    }
-    echo $i++.','; 
+function x(){
+    sleep(3);
+    echo 'Done <br/>';
+    return 3;
 }
 
-// do-while => statement within the loop will execute once
-$i = 0;
-do {
-    echo $i++;
-} while($i <= 15);
-
-// for 
-$text = ['a', 'b', 'c'. 'd'];
-for ($i=0, $length = count($text); $i < $length; $i++) {
-    echo  '<pre>';
-    echo  $text[$i];
-}
-
-// foreach
-$programmingLanguages = ['PHP', 'js', 'go', 'python'];
-
-foreach ($programmingLanguages as $language) {
-    echo $language . '<br/>';
-}
-
+switch (x()){
+    case 1:
+        echo 'Paid';
+        break;
+    case 2:
+        echo '2';
+        break;
+    case 3:
+        echo '3';
+        break;
+    default:
+        echo '4';        
+} 

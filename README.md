@@ -45,3 +45,6 @@ good practice => for($i = 0, $length = count($array); $i < $length; $i++){}
 Becasue  
 Loop have to run many times until the condition is false. If we use extra function within loop can cause performance issues. So, just defined the variable from the intitial state for performance issue. 
 
+Don't use functions as a comparison directly because it will reduce the performance.
+if you want to work with functions for logical statements use switch/case;  
+
