@@ -46,5 +46,8 @@ Becasue
 Loop have to run many times until the condition is false. If we use extra function within loop can cause performance issues. So, just defined the variable from the intitial state for performance issue. 
 
 Don't use functions as a comparison directly because it will reduce the performance.
-if you want to work with functions for logical statements use switch/case;  
+if you want to work with functions for logical statements use switch/case;
+
+Switch() / Case can create multiple expression;
+match() can't create muliple expression just use function expression for data;
 
