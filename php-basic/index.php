@@ -1,30 +1,38 @@
 <?php
 
-/* Switch */
+/* Return / Declare / Goto */
 
-function x(){
-    sleep(3);
-    echo 'Done <br/>';
-    return 3;
+// function x($a, $b){
+//     $c = $a + $b;
+//     return $c; 
+// }
+
+// $x = x(10, 12);
+// echo $x;
+// return;
+// echo "<br/> hello world";
+
+
+// declare ticks
+// function onTick(){
+//     echo "tick <br/>";
+// }
+
+// register_tick_function('onTick');
+// declare(ticks= 3);
+// $i = 0;
+// $length = 10;
+
+// while($i < $length){
+//     echo $i++;
+// }
+
+
+// declare encoding
+
+// declare strict_types
+declare(strict_types = 1);
+
+function sum(int $a, int $b){
+    return $a + $b;
 }
-
-switch (x()){
-    case 1:
-        echo 'Paid';
-        break;
-    case 2:
-        echo '2';
-        break;
-    case 3:
-        echo '3';
-        break;
-    default:
-        echo '4';        
-} 
-
-match (x()) {
-    1 => 'Paid',
-    2 => '2',
-    3 => '3',
-    4 => '4',
-};
