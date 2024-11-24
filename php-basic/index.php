@@ -1,19 +1,34 @@
 <?php
 
-/* Control Structures (if / else / elseif / else if)  */
+/* Loops */
 
-$score = 95;
-if($score >= 90){
-    echo 'A';
-    if($score >= 95){
-        echo '+';
+// while => working through if condition is true
+$i = 0;
+while ($i <= 15) {
+    if($i % 2 == 0){
+        $i++;
+        continue;
     }
-} else if($score >= 80 ) {
-    echo 'B';
-} else if($score >= 70) {
-    echo 'C';
-} else if($score >= 60) {
-    echo 'D';
-} else {
-    echo 'F';
+    echo $i++.','; 
 }
+
+// do-while => statement within the loop will execute once
+$i = 0;
+do {
+    echo $i++;
+} while($i <= 15);
+
+// for 
+$text = ['a', 'b', 'c'. 'd'];
+for ($i=0, $length = count($text); $i < $length; $i++) {
+    echo  '<pre>';
+    echo  $text[$i];
+}
+
+// foreach
+$programmingLanguages = ['PHP', 'js', 'go', 'python'];
+
+foreach ($programmingLanguages as $language) {
+    echo $language . '<br/>';
+}
+

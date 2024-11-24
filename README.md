@@ -36,3 +36,12 @@ New destination for the PHP knowledge
 /* Operator Precedence & Associativity */
 // follow this link 
 https://www.php.net/manual/en/language.operators.precedence.php
+
+/* Loops */
+using extra function on for loop condition expression is bad practice.
+bad practice => for($i = 0, $i < count($array); $i++){}
+good practice => for($i = 0, $length = count($array); $i < $length; $i++){}
+
+Becasue  
+Loop have to run many times until the condition is false. If we use extra function within loop can cause performance issues. So, just defined the variable from the intitial state for performance issue. 
+
