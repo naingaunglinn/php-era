@@ -60,3 +60,4 @@ every variables in php is local scope.
 
 callable function is normal function.
 closure function is anonymous function.
+fn() => single expression // arrow expression.
