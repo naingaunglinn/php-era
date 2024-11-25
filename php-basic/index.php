@@ -1,7 +1,20 @@
 <?php
 
-/** require / require_once / include / include_once  **/
-echo '<nav>
-        <a href="home.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="contact.php">Contract</a></nav>';  
+/** Functions  **/
+
+// foo();
+// bar();
+// function foo(){
+//     echo 'foo';
+//     function bar(){
+//         echo 'bar';
+//     }
+// }
+
+/* Return Types and Strict Types */
+declare(strict_types= 1);
+function foo(): int|string{
+    return '1';
+}
+
+var_dump(foo());
