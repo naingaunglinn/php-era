@@ -57,3 +57,6 @@ require_once => can include only one time in one file.
 
 //Variables
 every variables in php is local scope.
+
+callable function is normal function.
+closure function is anonymous function.

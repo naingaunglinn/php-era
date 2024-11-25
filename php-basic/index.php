@@ -1,29 +1,22 @@
 <?php
 
-/** Variable Scope  **/
-// $x = 5;
+/** Variable, anonymous & arrow functions  **/
+// $x = 20;
 
-// include ("script1.php");
+$sum = function (callable $callback, int|float ...$numbers): int|float{
+    return $callback(array_sum($numbers));
+};
 
-// function foo($x){
-//     return $x;
-// }
+echo $sum('foo', 1, 2, 3, 4);
 
-// echo foo($x);
+// $array = [1,2,3,4];
 
-function getValues(){
-    $value = someVeryExpensiveFunction();
-
-    return $value;
+function foo($element){
+    return $element * 2;    
 }
 
-function someVeryExpensiveFunction(){
-    sleep(2);
+// $array2 = array_map('foo', $array);
 
-    return 10;
-}
-
-$getValues = getValues();  
-echo $getValues. '<br/>';
-echo $getValues. '<br/>';
-echo $getValues. '<br/>';
+// echo "<pre>";
+// var_dump($array);
+// var_dump($array2);
