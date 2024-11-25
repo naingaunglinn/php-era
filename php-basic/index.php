@@ -1,27 +1,29 @@
 <?php
 
-/** Functions  **/
-// declare(strict_types= 1);
-// function foo(int|float $a, int|float $b): int|float{
-//     if($a % 2 == 0){
-//         $a /= 2;
-//     }
+/** Variable Scope  **/
+// $x = 5;
 
-//     return $a * $b;
+// include ("script1.php");
+
+// function foo($x){
+//     return $x;
 // }
 
-// $x = 6.0;
-// $y = 7;
+// echo foo($x);
 
-// echo foo($x, $y);
-// var_dump($x, $y);
+function getValues(){
+    $value = someVeryExpensiveFunction();
 
-function sum(...$numbers){
-    return array_sum($numbers);
-    var_dump($numbers); 
+    return $value;
 }
 
-$x = 10;
-$y = 20;
+function someVeryExpensiveFunction(){
+    sleep(2);
 
-echo sum($x,$y,20,50);
+    return 10;
+}
+
+$getValues = getValues();  
+echo $getValues. '<br/>';
+echo $getValues. '<br/>';
+echo $getValues. '<br/>';
