@@ -54,3 +54,10 @@ match() can't create muliple expression just use function expression for data;
 
 require => can include multiple times.
 require_once => can include only one time in one file.
+
+//Variables
+every variables in php is local scope.
+
+callable function is normal function.
+closure function is anonymous function.
+fn() => single expression // arrow expression.
