@@ -1,20 +1,11 @@
 <?php
 
-/* Date & Time */
+require 'helpers.php';
 
-$currentTime = time();
+$info = 'array_filter(array $array, callable|null $callback = null, int $mode = 0): array';
 
-echo $currentTime . "<br/>";
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-echo $currentTime + 5 * 24 * 60 * 60 . "<br/>";
+$even = array_filter($array, fn($number, $key) => $number % 2 === 0, ARRAY_FILTER_USE_BOTH);
 
-echo $currentTime - 60 * 60 * 24 . "<br/>";
-
-echo date('m/d/y g:ia', $currentTime + 5 * 24 * 60 * 60) . "<br/>";
-
-echo date('m/d/y g:ia', $currentTime - 60 * 60 * 24) . "<br/>";
-
-$date = date('m/d/Y g:ia', strtotime('second friday of January'));
-
-echo "<pre/>";
-print_r(date_parse($date));
+prettyPrintArray($even, $info);
